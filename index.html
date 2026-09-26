@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReConCel — Remember. Connect. Celebrate.</title>
+<meta name="description" content="ReConCel finds birthdays and anniversaries in your WhatsApp chats and reminds you before each one. Everything stays on your iPhone.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root { color-scheme: light dark; --fg: #1d1d1f; --muted: #6e6e73; --bg: #fff; --card: #f5f5f7; --line: #d2d2d7; --accent: #6b2fd6; --brand: #8233fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f5f5f7; --muted: #a1a1a6; --bg: #111; --card: #1c1c1e; --line: #38383a; --accent: #b08cff; --brand: #b08cff; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 32px 16px 40px; }
+  a { color: var(--accent); }
+
+  header { display: flex; align-items: center; gap: 16px; }
+  header img { width: 72px; height: 72px; border-radius: 16px; }
+  header h1 { font-size: 2em; line-height: 1.1; margin: 0; }
+  .tagline { margin: 4px 0 0; color: var(--muted); font-size: 1.1em; }
+  .tagline b { color: var(--brand); }
+
+  .features { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 40px 0; }
+  .feature { background: var(--card); border-radius: 16px; padding: 20px; }
+  .feature h2 { font-size: 1.05em; margin: 0 0 6px; color: var(--brand); }
+  .feature p { margin: 0; color: var(--muted); font-size: .95em; }
+
+  .screens { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin: 0; }
+  .screens figure { margin: 0; text-align: center; }
+  .screens img { width: 100%; height: auto; border-radius: 28px; border: 1px solid var(--line); display: block; }
+  .screens figcaption { margin-bottom: 12px; font-weight: 600; font-size: 1.05em; }
+  .divider { border: 0; height: 4px; border-radius: 2px; background: var(--brand); margin: 0 0 40px; }
+
+  footer { border-top: 1px solid var(--line); margin-top: 48px; padding-top: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: var(--muted); font-size: .9em; }
+  footer nav a { margin-left: 20px; white-space: nowrap; }
+
+  @media (max-width: 860px) { .features { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px) {
+    .screens { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .features { grid-template-columns: 1fr; }
+    footer { flex-direction: column; }
+    footer nav a { margin: 0 20px 0 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="images/logo.png" alt="ReConCel logo">
+    <div>
+      <h1>ReConCel</h1>
+      <p class="tagline"><b>Re</b>member. <b>Con</b>nect. <b>Cel</b>ebrate.</p>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="feature">
+      <h2>Finds the dates</h2>
+      <p>Finds birthdays and anniversaries in your WhatsApp chats.</p>
+    </div>
+    <div class="feature">
+      <h2>Timely reminders</h2>
+      <p>Reminds you the evening before and on the day.</p>
+    </div>
+    <div class="feature">
+      <h2>One-tap wishes</h2>
+      <p>Message or call them in one tap.</p>
+    </div>
+    <div class="feature">
+      <h2>Private by design</h2>
+      <p>Everything stays on your iPhone.</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="screens" aria-label="App screenshots">
+    <figure><figcaption>Home</figcaption><img src="images/screen-home.png" alt="Home screen showing missed and upcoming birthdays and anniversaries" width="603" height="1311"></figure>
+    <figure><figcaption>Contacts</figcaption><img src="images/screen-contacts.png" alt="Contacts found in imported chats" width="603" height="1311"></figure>
+    <figure><figcaption>Calendar</figcaption><img src="images/screen-calendar.png" alt="Calendar of birthdays and anniversaries by month" width="603" height="1311"></figure>
+    <figure><figcaption>Reminders</figcaption><img src="images/screen-notification.png" alt="A birthday reminder notification" width="603" height="1311"></figure>
+  </section>
+
+  <footer>
+    <span>© 2026 ReConCel. All rights reserved.</span>
+    <nav>
+      <a href="support/">Help &amp; Contact</a>
+      <a href="privacy/">Privacy Policy</a>
+      <a href="terms/">Terms &amp; Conditions</a>
+    </nav>
+  </footer>
+</div>
+</body>
+</html>
