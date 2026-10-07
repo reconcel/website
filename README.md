@@ -4,4 +4,4 @@ Help & Contact, Privacy Policy and Terms pages for the ReConCel iOS app, served 
 
 The home page (`index.html`, `images/`, icons) is maintained here. `support/`, `privacy/` and `terms/` are generated from the in-app text in the app repository (`scripts/export-site.py`) — don't edit them here; regenerate and copy just those three folders over (not the app repo's `site/index.html`, which only redirects).
 
-Content © 2026 8th Hour LLC. All rights reserved.
+Content © 2026 8th Hour Collective LLC. All rights reserved.
